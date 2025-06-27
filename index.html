@@ -56,11 +56,11 @@
   </style>
 </head>
 
-<body hx-boost="true" hx-target="#content">
+<body>
   <nav>
-    <a href="home.html">Home</a>
-    <a href="posts.html">Posts</a>
-    <a href="users.html">Users</a>
+    <a href="index.html" hx-get="/fragments/home.html" hx-target="#content" hx-push-url="false">Home</a>
+    <a href="posts.html" hx-get="/fragments/posts.html" hx-target="#content" hx-push-url="true">Posts</a>
+    <a href="users.html" hx-get="/fragments/users.html" hx-target="#content" hx-push-url="true">Users</a>
   </nav>
 
   <div
