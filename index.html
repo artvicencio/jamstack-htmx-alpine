@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" x-data>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTMX + Alpine.js Demo</title>
+  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      padding: 1em;
+      display: flex;
+      gap: 1em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 1em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+
+<body hx-boost="true" hx-target="#content">
+  <nav>
+    <a href="fragments/home.html">Home</a>
+    <a href="fragments/posts.html">Posts</a>
+    <a href="fragments/users.html">Users</a>
+  </nav>
+
+  <div class="container" id="content">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.5/dist/htmx.min.js"
+    integrity="sha384-t4DxZSyQK+0Uv4jzy5B0QyHyWQD2GFURUmxKMBVww9+e2EJ0ei/vCvv7+79z0fkr"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
