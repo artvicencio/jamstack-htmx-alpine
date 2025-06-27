@@ -58,13 +58,13 @@
 
 <body>
   <nav>
-    <a href="index.html" hx-get="/fragments/home.html" hx-target="#content" hx-push-url="false">Home</a>
-    <a href="posts.html" hx-get="/fragments/posts.html" hx-target="#content" hx-push-url="true">Posts</a>
-    <a href="users.html" hx-get="/fragments/users.html" hx-target="#content" hx-push-url="true">Users</a>
+    <a href="index.html" hx-get="fragments/home.html" hx-target="#content" hx-push-url="false">Home</a>
+    <a href="posts.html" hx-get="fragments/posts.html" hx-target="#content" hx-push-url="true">Posts</a>
+    <a href="users.html" hx-get="fragments/users.html" hx-target="#content" hx-push-url="true">Users</a>
   </nav>
 
   <div
-    hx-get="home.html"
+    hx-get="fragments/home.html"
     hx-trigger="load"
     hx-target="#content"
     hx-swap="innerHTML"
